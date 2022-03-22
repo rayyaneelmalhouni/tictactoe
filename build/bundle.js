@@ -374,9 +374,9 @@ var app = (function () {
     			div = element("div");
     			button = element("button");
     			button.textContent = "Retry";
-    			attr(h1, "class", "winner svelte-1eordh3");
-    			attr(button, "class", "retry-btn svelte-1eordh3");
-    			attr(div, "class", "btn-container svelte-1eordh3");
+    			attr(h1, "class", "winner svelte-ovsgny");
+    			attr(button, "class", "retry-btn svelte-ovsgny");
+    			attr(div, "class", "btn-container svelte-ovsgny");
     		},
     		m(target, anchor) {
     			insert(target, h1, anchor);
@@ -428,7 +428,7 @@ var app = (function () {
     		c() {
     			h1 = element("h1");
     			if_block.c();
-    			attr(h1, "class", "turn svelte-1eordh3");
+    			attr(h1, "class", "turn svelte-ovsgny");
     		},
     		m(target, anchor) {
     			insert(target, h1, anchor);
