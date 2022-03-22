@@ -30,7 +30,7 @@
         color: #F9F9F9;
     }
     .retry-btn:hover {
-        background-color: rgb(255, 212, 219);
+        background-color: rgb(245, 66, 66);
     }
     .btn-container {
         display: flex;
