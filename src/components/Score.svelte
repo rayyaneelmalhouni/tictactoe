@@ -25,7 +25,7 @@
         text-align: center;
         padding: 10px 20px;
         border-radius: 15px;
-        background-color: pink;
+        background-color: red;
         border: none;
         color: #F9F9F9;
     }
