@@ -1,5 +1,9 @@
 <script>
     import Square from "./Square.svelte";
+    let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    export let squares;
+    console.log(squares)
+    
 </script>
 <style>
    div {
@@ -13,14 +17,7 @@
    }
 </style>
 <div>
-	<Square />
-	<Square />
-	<Square />
-	<Square />
-	<Square />
-	<Square />
-	<Square />
-	<Square />
-	<Square />
-	
+    {#each squares as look ,i}
+	<Square {i} {look} on:message />
+	{/each}
 </div>

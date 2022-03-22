@@ -1,3 +1,17 @@
+<script>
+    import { createEventDispatcher } from "svelte";
+    export let i;
+    export let look;
+    const dispatch = createEventDispatcher();
+    function click() {
+        dispatch("message", {
+            text: i + 1
+        })
+    }
+    
+
+</script>
+
 <style>
    .square {
       width: 98.6px;
@@ -39,16 +53,19 @@
 </style>
 
 
-<div class="square">
-    <!-- <div class="icon">
+<div class="square" on:click={click}>
+    {#if look === "X"}
+    <div class="icon">
         <span class="left"></span>
         <span class="right"></span>
-    </div>  -->
- <div class="circle-container">
+    </div> 
+    {:else if look === "O"}
+    <div class="circle-container">
         <div class="circle">
 
         </div>      
     </div>
+    {/if }
         
     
 
