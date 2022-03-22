@@ -40,7 +40,7 @@
 </style>
 
 {#if !winner}<h1 class="turn">{#if turn}You're turn{:else}Dealer's turn{/if}</h1>
-{:else }<h1 class="winner">{#if winner === "X"}You Won{:else}You lose{/if}</h1>
+{:else }<h1 class="winner">{#if winner === "X"}You Won{:else if winner === "O"}You lose {:else} Tie{/if}</h1>
 <div class="btn-container"><button class="retry-btn" on:click={retry}>Retry</button></div>
 {/if}
 

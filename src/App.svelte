@@ -20,7 +20,10 @@
 			squares[self.detail.text - 1] = turn ? "X": "O";
         	turn = turn ? false: true;
 			winner = checkWinner();
-			console.log(winner)
+			if (!winner) {
+				checkSquares();
+			}
+			
 		}
     }
 	function checkWinner() {
@@ -43,6 +46,15 @@
 		squares = Array(9).fill(null);
 		winner = "";
 		turn = true;
+	}
+	function checkSquares() {
+		let result = squares.some(item => item == null)
+		if (!result) {
+			tie();
+		}
+	}
+	function tie() {
+		winner = "Tie"
 	}
 </script>
 <style>
